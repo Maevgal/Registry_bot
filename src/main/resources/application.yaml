@@ -1,0 +1,14 @@
+spring.application.name: registration_bot
+bot:
+    token: ${BOT_TOKEN}
+spring:
+    liquibase:
+        enabled: true
+        change-log: classpath:liquibase-changelog.yaml
+    datasource:
+        platform: postgres
+        url: jdbc:postgresql://localhost:5433/habrdb
+        username: maevgal
+        password: 12345
+        driverClassName: org.postgresql.Driver
+
